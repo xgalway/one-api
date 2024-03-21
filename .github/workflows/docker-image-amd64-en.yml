@@ -19,8 +19,7 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0 # 此设置会克隆所有分支和标签的完整历史
+
       - name: Check repository URL
         run: |
           REPO_URL=$(git config --get remote.origin.url)
